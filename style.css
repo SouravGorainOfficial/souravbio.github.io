@@ -1,0 +1,1078 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Source+Sans+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.section {
+    background: #f2f2fc;
+    min-height: auto;
+    display: block;
+    padding: 0 16px;
+    opacity: 1;
+    /* position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    z-index: 0; */
+}
+
+.hidden {
+    display: none !important;
+
+}
+
+.main_container {
+    padding-left: 270px;
+}
+
+.container {
+    max-width: 1100px;
+    width: 92%;
+    /* background: red; */
+    margin: auto;
+}
+
+.section .container {
+    padding-top: 60px;
+    padding-bottom: 59px;
+}
+
+.section_title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background-color: red; */
+    margin-bottom: 60px;
+}
+
+.section_title h2 {
+    font-size: 40px;
+    color: #304e4d;
+    font-weight: 700;
+}
+
+.section_title h2::after {
+    content: "";
+    height: 4px;
+    width: 25px;
+    background-color: red;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
+.section_title h2::before {
+    content: "";
+    height: 4px;
+    width: 50px;
+    background-color: red;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.padd-15 {
+    /* padding-left: 15px; */
+    padding-right: 15px;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: -15px;
+    position: relative;
+
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: wheat;
+    border-radius: 40px;
+    border: none;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    background: rgb(201, 19, 19);
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.shadow_dark {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.25);
+}
+
+.aside {
+    width: 270px;
+    background: #fdf9ff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 30px;
+    height: 100%;
+    border-right: 1px solid #e8dfec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.main_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aside .social {
+    /* margin-top: 10px; */
+    position: absolute;
+    bottom: 12px;
+}
+
+.aside .social .fa {
+    padding: 16px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 40%;
+    color: red;
+    transition: all 0.3s ease;
+}
+
+.aside .social .fa:hover {
+    background: red;
+    color: #fff;
+}
+
+
+/* .nav_icon {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    bottom: 12px;
+}
+
+.nav_icon .fa {
+    padding: 16px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 40%;
+    color: red;
+    transition: all 0.3s ease;
+    margin: 0 25px;
+
+}
+
+.nav_icon .fa:hover {
+    background: red;
+    color: #fff;
+} */
+
+
+
+.aside .logo {
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.aside .logo a span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+}
+
+.aside .logo a {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #1c7f90;
+    font-weight: 700;
+    /* background: red; */
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.aside .logo a::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid rgb(201, 73, 51);
+    border-left: 5px solid rgb(201, 73, 51);
+    bottom: 0;
+    left: 0;
+}
+
+.aside .logo a::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid rgb(201, 73, 51);
+    border-right: 5px solid rgb(201, 73, 51);
+    top: 0;
+    right: 0;
+}
+
+.aside .nav {
+    margin-top: 50px;
+
+}
+
+.aside .nav li {
+    margin-bottom: 20px;
+    font-size: 15px;
+    display: block;
+}
+
+.nav li a span {
+    padding-left: 8px;
+    letter-spacing: 2px;
+}
+
+
+.aside .nav li a {
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid #e8dfec;
+    color: #302e4d;
+    padding: 5px 15px;
+    font-size: 16px;
+}
+
+
+/* home */
+.home {
+    /* min-width: 100%; */
+    /* display: flex; */
+    color: #302e4d;
+
+}
+
+.home .home_info {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+.home .home_info h2 span {
+    color: red;
+}
+
+h3.hello {
+    font-size: 28px;
+    margin: 15px 0;
+    color: #504e70;
+}
+
+h3.hello span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(180, 40, 40);
+}
+
+h3.my_profession {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.typing {
+    color: red;
+}
+
+.home_info p {
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: #504e70;
+}
+
+.home .home_img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+
+}
+
+.home .home_img::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-bottom: 5px solid rgb(201, 73, 51);
+    border-right: 5px solid rgb(201, 73, 51);
+    right: 10px;
+    bottom: -50px;
+}
+
+.home .home_img::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-top: 5px solid rgb(201, 73, 51);
+    border-left: 5px solid rgb(201, 73, 51);
+    left: 8px;
+    top: 13px;
+}
+
+.home .home_img img {
+    width: 25vw;
+    height: auto;
+    margin: auto;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-top: 20px
+}
+
+/* About Start */
+.about .about_contant {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background-color: red; */
+}
+
+.about .about_contant .about_text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background-color: red; */
+
+}
+
+.about .about_contant .about_text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #304e4d;
+}
+
+.about .about_contant .about_text h3 span {
+    color: red;
+}
+
+.about .about_contant .about_text p {
+    font-size: 16px;
+    line-height: 25px;
+    color: #504e70;
+}
+
+.about .about_contant .personal_info {
+    flex: 0 0 60%;
+    max-width: 60%;
+    /* background-color: red; */
+    margin-top: 40px;
+}
+
+.about .about_contant .personal_info .info_item {
+    flex: 0 0 60%;
+    /* max-width: 50%; */
+    /* padding: 0px 12px; */
+    /* background-color: red; */
+}
+
+.about .about_contant .personal_info .info_item p {
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #302e4d;
+    border-bottom: 1px solid #e8dfec;
+    display: inline-block;
+
+}
+
+.about .about_contant .personal_info .info_item p span {
+    font-weight: 400;
+    color: #504e70;
+    margin-left: 4px;
+}
+
+.about .about_contant .personal_info .buttons {
+    margin-top: 30px;
+
+}
+
+.about .about_contant .personal_info .buttons {
+    margin-top: 30px;
+}
+
+.about .about_contant .personal_info .buttons .btn {
+    margin-right: 22px;
+    margin-top: 10px;
+}
+
+
+.about .about_contant .skills {
+    flex: 0 0 40%;
+    max-width: 40%;
+    /* background-color: yellow; */
+    margin-top: 40px;
+}
+
+.about .about_contant .skills .skill_item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background-color: red; */
+    margin-bottom: 25px;
+}
+
+.about .about_contant .skills .skill_item h5 {
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #304e4d;
+}
+
+.about .about_contant .skills .skill_item .progress {
+    background-color: #504e70;
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+
+.about .about_contant .skills .skill_item .progress .progress_in {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: red;
+}
+
+.about .about_contant .skills .skill_item .skill_percent {
+    position: absolute;
+    right: 0;
+    color: #302e4d;
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.about .about_contant .education,
+.about .about_contant .experience {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+    /* background-color: red; */
+}
+
+.about .about_contant h3.title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #302e4d;
+}
+
+.about .about_contant .timeline_box {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background-color: red; */
+
+}
+
+.about .about_contant .timeline {
+    background-color: #fdf9ff;
+    padding: 30px 15px;
+    border: 1px solid #e8dfec;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+
+}
+
+.about .about_contant .timeline .timeline_item {
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+.about .about_contant .timeline .timeline_item:last-child {
+    padding-bottom: 0;
+}
+
+.about .about_contant .timeline .timeline_item::before {
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: red;
+}
+
+.about .about_contant .timeline .circle_dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.about .about_contant .timeline .timeline_date {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #504e70;
+}
+
+.about .about_contant .timeline .timeline_date .fa {
+    margin-right: 5px;
+
+}
+
+.padd_left {
+    padding-left: 8px;
+}
+
+.about .about_contant .timeline .timeline_title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: #302e4d;
+}
+
+.about .about_contant .timeline .timeline_text {
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: #504e70;
+}
+
+/* About End */
+
+/* Services */
+.service .container {
+    padding-bottom: 40px;
+}
+
+.service .service_item {
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+
+}
+
+.service .service_item .service_item_inner {
+    background-color: #fdf9ff;
+    border: 1px solid #e8dfec;
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service .service_item .service_item_inner:hover {
+    box-shadow: 0 0 30px rgba(48, 46, 77, 0.15);
+}
+
+.service .service_item .service_item_inner .icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    /* background-color: red; */
+    margin: 0 auto 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service .service_item .service_item_inner .icon .fa {
+    font-size: 40px;
+    line-height: 60px;
+    color: red;
+    transition: all 0.3s ease;
+
+}
+
+.service .service_item .service_item_inner:hover .icon {
+    background: red;
+}
+
+.service .service_item .service_item_inner:hover .icon .fa {
+    font-size: 25px;
+    color: #fff;
+}
+
+.service .service_item .service_item_inner h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #302e4d;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
+.service .service_item .service_item_inner p {
+    font-size: 16px;
+    color: #504e70;
+    line-height: 25px;
+}
+
+/* Services */
+
+/* Portfolio */
+.portfolio .container {
+    padding-bottom: 40px;
+}
+
+.portfolio .portfolio_heading {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.portfolio .portfolio_heading h2 {
+    color: #302e4d;
+    font-weight: 500;
+}
+
+.portfolio .portfolio_item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.portfolio .portfolio_item_inner {
+    border: 6px solid #fdf9ff;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .portfolio_item_inner .portfolio_img img {
+    width: 100%;
+    display: block;
+    height: 35vh;
+}
+
+/* Portfolio */
+
+/* Contact */
+.contact_title {
+    color: red;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.contact_sub_title {
+    color: #302e4d;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+
+}
+
+.contact .contact_info_item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 60PX;
+}
+
+.contact .contact_info_item .icon {
+    display: inline-block;
+}
+
+.contact .contact_info_item .icon.fa {
+    font-size: 25px;
+    color: red;
+}
+
+.contact .contact_info_item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #302e4d;
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+
+.contact .contact_info_item p {
+    font-size: 16px;
+    line-height: 25px;
+    color: #504e70;
+    font-weight: 400;
+}
+
+.contact .contact_form {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+}
+
+.contact .contact_form .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    /* background: red; */
+}
+
+.contact .contact_form .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background: red; */
+}
+
+.contact .contact_form .form_item {
+    margin-bottom: 30px;
+}
+
+.contact .contact_form .form_item .form_control {
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    background: #fdf9ff;
+    border: 1px solid #e8dfec;
+    padding: 10px 25px;
+    font-size: 16px;
+    color: #504e70;
+    transition: all 0.3s ease;
+}
+
+.contact .contact_form .form_item span {
+    color: red;
+    display: none;
+}
+
+.contact .contact_form .form_item .form_group {
+    position: relative;
+
+}
+
+.contact .contact_form .form_item .fa-circle-check {
+    color: green;
+    visibility: hidden;
+    font-size: 20px;
+    position: absolute;
+    right: 18px;
+    bottom: 15px;
+
+}
+
+.contact .contact_form .form_item .fa-circle-exclamation {
+    color: red;
+    visibility: hidden;
+    font-size: 20px;
+    position: absolute;
+    right: 18px;
+    bottom: 38px;
+}
+
+.contact .contact_form .form_item .sucess input {
+    border: 2px solid green;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+.contact .contact_form .form_item .sucess textarea {
+    border: 2px solid green;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+.contact .contact_form .form_item .error span {
+    display: block;
+}
+
+.contact .contact_form .form_item .sucess .fa-circle-check {
+    visibility: visible;
+}
+
+.contact .contact_form .form_item .error input {
+    border: 2px solid red;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    display: block;
+
+}
+
+.contact .contact_form .form_item .error textarea {
+    border: 2px solid red;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    display: block;
+
+}
+
+.contact .contact_form .form_item .error .fa-circle-exclamation {
+    visibility: visible;
+}
+
+.contact .contact_form .form_item .form_control:focus {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.contact .contact_form .form_item textarea.form_control {
+    height: 140px;
+
+}
+
+.contact .contact_form .btn {
+    height: 50px;
+    padding: 0 50px;
+}
+
+.popup_container {
+    width: 100%;
+    /* height: 100vh;
+    background: #3c5077; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 3px 30px;
+    color: #333;
+    visibility: hidden;
+}
+
+.open_popup {
+    top: 50;
+    visibility: visible;
+}
+
+.popup img {
+    width: 100px;
+    margin-top: -10%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button {
+    width: 80%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+
+}
+
+/* Contact */
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+footer .footpar {
+    font-size: 16spx;
+    background-color: #8c8c8c;
+    color: #fff;
+    height: 43px;
+    width: 100%;
+    padding: 13px;
+
+
+}
+
+/* Footer */
+
+
+
+
+@media(max-width:1198px) {
+
+
+    .about .about_contant .personal_info .info_item p span {
+        margin-left: 0;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 1023px) {
+
+
+    .home {
+        min-width: 100vh;
+        display: flex;
+        color: #302e4d;
+
+    }
+
+    .home .home_img img {
+        height: 400px;
+        margin: auto;
+        border-radius: 5px;
+        width: auto;
+    }
+
+
+
+
+}
+
+
+
+@media(max-width:991px) {
+
+    .contact .contact_info_item,
+    .portfolio .portfolio_item,
+    .service.service_item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+
+    .service .service_item,
+    .home .home_info {
+        flex: 0 0 100%;
+        max-width: 50%;
+    }
+
+    .home .home_img img {
+        width: 30vw;
+        height: auto;
+    }
+
+    .aside {
+        width: 240px;
+    }
+
+    .main_container {
+        padding-left: 240px;
+    }
+
+    .aside .nav li a {
+        font-size: 13px;
+    }
+
+    .home .home_img::after {
+        right: -40px;
+        bottom: -50px;
+    }
+
+    .home .home_img::before {
+        left: 30px;
+        top: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .aside {
+        left: -270px;
+    }
+
+    .main_container {
+        padding-left: 0;
+    }
+
+
+
+    .contact .contact_form .col-6,
+    .contact .contact_info_item,
+    .portfolio .portfolio_item,
+    .service .service_item,
+    .about .about_contant .experience,
+    .about .about_contant .education,
+    .about .about_contant .skills,
+    .about.about_contant .personal_info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home .home_img img {
+        width: 50vw;
+        height: auto;
+    }
+
+    .home .home_img::after,
+    .home .home_img::before {
+        border: none;
+    }
+
+    .home .home_info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home .home_img::after {
+        content: "";
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-bottom: 5px solid rgb(201, 73, 51);
+        border-right: 5px solid rgb(201, 73, 51);
+        right: -132px;
+        bottom: -40px;
+    }
+
+    .home .home_img::before {
+        content: "";
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-top: 5px solid rgb(201, 73, 51);
+        border-left: 5px solid rgb(201, 73, 51);
+        left: 4px;
+        top: 12px;
+        margin-top: 15px;
+
+    }
+
+}
+
+@media(max-width:550px) {
+    .main_container {
+        padding-left: 0;
+    }
+}
