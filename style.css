@@ -677,6 +677,10 @@ h3.my_profession {
     display: block;
     height: 35vh;
 }
+.portfolio .portfolio_item_inner .portfolio_img img:hover {
+    transform: scale(1.1);
+}
+
 
 /* Portfolio */
 
