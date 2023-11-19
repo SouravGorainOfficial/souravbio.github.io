@@ -7,6 +7,8 @@ var typed = new Typed(".auto_type", {
 })
 // typing
 
+let image = document.querySelector(".image-img");
+
 
 // Form Validation
 const form = document.getElementById("form");
@@ -64,8 +66,6 @@ const validate = () => {
 
 }
 
-
-
 function setErrorMsg(input, errormsgs) {
     const formGroup = input.parentElement;
     const span = formGroup.querySelector('span');
@@ -79,15 +79,38 @@ function setSucessMsg(input) {
 }
 
 
-// Age Calculate
-let currYear = new Date();
-let year = currYear.getFullYear();
-let dateOfBirth = 2000;
-function getAge() {
-    let age = year - dateOfBirth;
-    document.getElementById("age").innerHTML = age;
-    console.log(age);
-    return;
-}
-getAge();
+const work_observer = document.querySelector(".succeaaful_student")
+const workObserver = new IntersectionObserver((entries, observer) => {
+    const [entry] = entries;
+    console.log(entry);
+    if (!entry.isIntersecting) return;
+    const myNum = document.querySelectorAll(".count");
+    // console.log(myNum);
+
+    let speed = 20;
+
+    myNum.forEach((myCount) => {
+        let targer_count = myCount.dataset.count;
+        let init_count = +myCount.innerText;
+
+        let new_incre_num = Math.floor(targer_count / speed);
+
+        const updatedNumber = () => {
+            init_count += new_incre_num;
+            myCount.innerText = init_count;
+            if (init_count < targer_count) {
+                setTimeout(() => {
+                    updatedNumber()
+
+                }, 100)
+            }
+        }
+        updatedNumber()
+    })
+    observer.unobserve(work_observer)
+}, {
+    root: null,
+    threshold: 0
+})
+workObserver.observe(work_observer);
 
